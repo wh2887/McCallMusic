@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>McCall</title>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section id="page-music">
+  <main class="layout">
+    <div class="aside">
+      <figure></figure>
+      <div class="actions">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-music-previous"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-music-play"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-music-next"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="detail">
+      <h1>It's a new day</h1>
+      <ul class="icons">
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-airpods-pro"></use>
+          </svg>
+          <span>3333</span>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span>128</span>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zan"></use>
+          </svg>
+          <span>20</span>
+        </li>
+      </ul>
+      <div class="area-bar">
+        <div class="bar">
+          <div class="bar-progress"></div>
+        </div>
+        <div class="current-time">1:02</div>
+      </div>
+      <div class="author">周杰伦</div>
+      <div class="lyric">
+        <p>hello world</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="layout">
+      <svg class="icon icon-left" aria-hidden="true">
+        <use xlink:href="#icon-page-previous"></use>
+      </svg>
+      <svg class="icon icon-right" aria-hidden="true">
+        <use xlink:href="#icon-page-next"></use>
+      </svg>
+      <div class="box">
+        <ul>
+          <li>
+            <div class="cover"
+                 style="background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small)"></div>
+            <h3>漫步春天</h3>
+          </li>
+          <li>
+            <div class="cover"
+                 style="background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small)"></div>
+            <h3>漫步春天</h3>
+          </li>
+          <li>
+            <div class="cover"
+                 style="background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small)"></div>
+            <h3>漫步春天</h3>
+          </li>
+          <li>
+            <div class="cover"
+                 style="background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small)"></div>
+            <h3>漫步春天</h3>
+          </li>
+          <li>
+            <div class="cover"
+                 style="background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small)"></div>
+            <h3>漫步春天</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+</section>
+<section id="page-cover"></section>
+<div class="bg"></div>
+<script src="//at.alicdn.com/t/font_2391496_mrh6rgkppnc.js"></script>
+<script src="./main.js"></script>
+
+<script>
+  function f(data){
+    console.log(data)
+  }
+</script>
+<script src="playlist/hot?callback=f">
+</script>
+</body>
+</html>
