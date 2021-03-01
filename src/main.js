@@ -29,8 +29,14 @@ const Footer = {
   render() {
     // 渲染页面  需要数据，所以先请求数据后渲染
     // 1. 请求数据
+    // 歌曲 api
+    //  https://gitee.com/api/v5/repos/hellow2887/music-db/contents/Electus%20-%20Nero.mp3?ref=master
+    // img api
+    //  https://gitee.com/api/v5/repos/hellow2887/music-db/contents/%2Fimg%2FNeroImg.jpg?ref=master
+
+
     const _this = this
-    $.getJSON('http://api.jirengu.com/fm/getSong.php')
+    $.getJSON('https://gitee.com/api/v5/repos/hellow2887/music-db/contents/%2Fimg%2FNeroImg.jpg?ref=master')
       .done(function(ret){
         console.log(ret)
         _this.renderFooter(ret.channels)
